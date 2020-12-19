@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://thymeleaf.org">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+
+</head>
+
+<body>
+
+<from action="image" enctype="multipart/form-data" method="post">
+ <input type="file" name="image"> <input type ="submit"  value="upload">
+ </from>
+   
+    <section class="hero is-primary">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    Blog Editor
+                </h1>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <form action="">
+                <div class="field is-horizontal">
+                    <div class="field-label is-medium">
+                        <label class="label">标题</label>
+                    </div>
+                    <div class="field-body">
+                        <div class="field">
+                            <p class="control">
+                                <input class="input is-medium" type="text" placeholder="隸ｷ蝪ｫ蜀呎��鬚�">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="field is-horizontal">
+                    <div class="field-label is-small">
+                        <label class="label">内容简介</label>
+                    </div>
+                    <div class="field-body">
+                        <div class="field">
+                            <p class="control">
+                                <input class="input is-small" type="text" placeholder="隸ｷ蝪ｫ蜀吝��螳ｹ邂�莉�">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                        <label class="label">编辑内容</label>
+                    </div>
+                    <div class="field-body">
+                        <div class="field">
+                            <p class="control">
+                                <textarea class="textarea is-hovered is-large"></textarea>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="field is-horizontal">
+                        <div class="field-label is-normal">
+                            <label class="label">上传照片</label>
+                        </div>
+                        <div class="field-body">
+                                <div class="field">
+                                        <div class="file is-info is-centered has-name is-boxed">
+                                            <label class="file-label">
+                                                <input class="file-input" type="file" name="resume">
+                                                <span class="file-cta">
+                                                    <span class="file-icon">
+                                                        <i class="fas fa-cloud-upload-alt"></i>
+                                                    </span>
+                                                    <span class="file-label">
+                                                        image file
+                                                    </span>
+                                                </span>
+                                                <span class="file-name">
+                                                    upload an image from here
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                        </div>
+                    </div>
+                
+
+
+            </form>
+        </div>
+
+    </section>
+
+
+
+
+</body>
+
+</html>
